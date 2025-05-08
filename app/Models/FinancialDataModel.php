@@ -3,11 +3,11 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class CashflowModel extends Model
+class FinancialDataModel extends Model
 {
-    protected $table = 'cashflow_analysis';
+    protected $table = 'financial_data';
 
-    public function getCashflowData($tahun)
+    public function getPayableReceivable($tahun)
     {
         return $this->where('tahun', $tahun)
                     ->orderBy("FIELD(bulan, 'Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des')", '', false)
