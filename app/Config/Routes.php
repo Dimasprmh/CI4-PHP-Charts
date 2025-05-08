@@ -10,7 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Dashboard::index');
 
 // Route untuk halaman daftar semua chart
-$routes->get('chart', 'Chart::index'); // ⬅️ INI penting agar /chart langsung tampil daftar
+$routes->get('chart', 'Chart::index'); 
 
 // Semua chart spesifik dikelompokkan di sini
 $routes->group('chart', function($routes) {
@@ -27,6 +27,31 @@ $routes->group('chart', function($routes) {
     $routes->get('monthly-sales', 'Chart::monthlySales');
     $routes->get('customer-conversion', 'Chart::customerConversion');
     $routes->get('sales-pipeline', 'Chart::salesPipeline');
+    $routes->get('top-selling', 'Chart::topSelling');
+    $routes->get('sales-rep', 'Chart::salesRep');
+    $routes->get('supplier-performance', 'Chart::supplierPerformance');
+    $routes->get('purchase-order-tracking', 'Chart::purchaseOrderTracking');
+    $routes->get('cost-saving', 'Chart::costSaving');
+    $routes->get('lead-time', 'Chart::leadTime');
+    $routes->get('inventory-purchase', 'Chart::inventoryPurchase');
+    $routes->get('machine-utilization', 'Chart::machineUtilization');
+    $routes->get('production-outputvstarget', 'Chart::productionOutputVsTarget');
+    $routes->get('downtime-maintenance', 'Chart::downtimeMaintenance');
+    $routes->get('quality-control', 'Chart::qualityControl');
+    $routes->get('work-order', 'Chart::workOrder');
+    $routes->get('demand-forecasting', 'Chart::demandForecasting');
+    $routes->get('inventory-turnover', 'Chart::inventoryTurnover');
+    $routes->get('wip-tracking', 'Chart::wipTracking');
+    $routes->get('supply-demand-alignment', 'Chart::supplyDemandAlignment');
+    $routes->get('stock-reorder-point', 'Chart::stockReorderPoint');
+    $routes->get('delivery-performance', 'Chart::deliveryPerformance');
+    $routes->get('freight-costs', 'Chart::freightCosts');
+    $routes->get('warehouse-utilization', 'Chart::warehouseUtilization');
+    $routes->get('order-cycle-time', 'Chart::orderCycleTime');
+    $routes->get('supplier-lead-time', 'Chart::supplierLeadTime');
+
+
+
 });
 
 

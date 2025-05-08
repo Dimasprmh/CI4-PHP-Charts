@@ -1,7 +1,6 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
 
-<h2>Sales Pipeline & Forecasting</h2>
 <p>Menampilkan Sales Pipeline & Forecasting per bulan.</p>
 
 <div id="sales-pipeline-chart" style="width:100%; height:500px;"></div>
