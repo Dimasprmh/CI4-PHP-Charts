@@ -6,8 +6,12 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+ $routes->get('login', 'Auth::login');
+ $routes->post('login', 'Auth::loginPost');
+ $routes->get('logout', 'Auth::logout');
+ $routes->get('/', 'Dashboard::index', ['filter' => 'authGuard']);
 // Default route (beranda / dashboard)
-$routes->get('/', 'Dashboard::index');
+//$routes->get('/', 'Dashboard::index');
 
 // Route untuk halaman daftar semua chart
 $routes->get('chart', 'Chart::index'); 

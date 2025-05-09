@@ -2,7 +2,10 @@
 <?= $this->section('content') ?>
 
 <h2 style="text-align: center;">Daftar Chart</h2>
-
+<?php
+    echo password_hash('admin', PASSWORD_DEFAULT);
+    ?>  
+<br>
 <div class="chart-list">
     <?php
     $charts = [
